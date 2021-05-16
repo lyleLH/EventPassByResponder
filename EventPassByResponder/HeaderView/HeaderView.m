@@ -6,6 +6,13 @@
 //
 
 #import "HeaderView.h"
+#import "UIResponder+NextResponder.h"
+
+
+@interface HeaderView ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@end
 
 @implementation HeaderView
 
@@ -18,15 +25,18 @@
 */
 
 
-- (IBAction)textfieldEditingDidEnd:(UITextField *)sender {
+- (void)textfieldEditingChange:(UITextField *)sender {
     
+    [self routerEventName:@"textfieldEditingDidEnd" userInfo:@{@"textField":sender}];
 }
 
 - (IBAction)confirmButtonClicked:(UIButton*)sender {
     
-    
+    [self routerEventName:@"confirmButtonClicked" userInfo:@{@"button":sender}];
 }
-
-
-
+ 
+- (void)setTextField:(UITextField *)textField {
+    [textField addTarget:self action:@selector(textfieldEditingChange:) forControlEvents:UIControlEventEditingChanged];
+    _textField  = textField;
+}
 @end

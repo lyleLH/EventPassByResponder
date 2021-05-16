@@ -8,6 +8,7 @@
 #import "HomeView.h"
 #import "HeaderView.h"
 #import <Masonry/Masonry.h>
+#import "UIResponder+NextResponder.h"
 @interface HomeView ()
 @property (weak, nonatomic) IBOutlet UIView *searheaderView;
 
@@ -32,8 +33,8 @@
 }
 
 
-- (IBAction)menuButtonClicked:(id)sender {
-    
+- (IBAction)menuButtonClicked:(UIButton*)sender {
+    [self routerEventName:@"menuButtonClicked" userInfo:@{@"button":sender}];
 }
 
 
