@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9059DAFD07EA5B50CBC4478 /* Pods_EventPassByResponder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C30792BF4E5D4B4A3F1EC /* Pods_EventPassByResponder.framework */; };
 		C8EE1B152650FDA70009D3FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE1B142650FDA70009D3FB /* AppDelegate.m */; };
 		C8EE1B182650FDA70009D3FB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE1B172650FDA70009D3FB /* SceneDelegate.m */; };
 		C8EE1B1B2650FDA70009D3FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE1B1A2650FDA70009D3FB /* ViewController.m */; };
@@ -14,9 +15,16 @@
 		C8EE1B202650FDA90009D3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EE1B1F2650FDA90009D3FB /* Assets.xcassets */; };
 		C8EE1B232650FDA90009D3FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EE1B212650FDA90009D3FB /* LaunchScreen.storyboard */; };
 		C8EE1B262650FDA90009D3FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE1B252650FDA90009D3FB /* main.m */; };
+		C8EE1B302650FDFB0009D3FB /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE1B2F2650FDFB0009D3FB /* HomeView.m */; };
+		C8EE1B352650FE0D0009D3FB /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE1B342650FE0D0009D3FB /* HeaderView.m */; };
+		C8EE1B392650FE180009D3FB /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8EE1B382650FE180009D3FB /* HomeView.xib */; };
+		C8EE1B3C2650FE1F0009D3FB /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8EE1B3B2650FE1F0009D3FB /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15290A6DA25A9C46321DA594 /* Pods-EventPassByResponder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventPassByResponder.release.xcconfig"; path = "Target Support Files/Pods-EventPassByResponder/Pods-EventPassByResponder.release.xcconfig"; sourceTree = "<group>"; };
+		45FBC2F75C1C219E3F7470F4 /* Pods-EventPassByResponder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventPassByResponder.debug.xcconfig"; path = "Target Support Files/Pods-EventPassByResponder/Pods-EventPassByResponder.debug.xcconfig"; sourceTree = "<group>"; };
+		843C30792BF4E5D4B4A3F1EC /* Pods_EventPassByResponder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventPassByResponder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EE1B102650FDA70009D3FB /* EventPassByResponder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPassByResponder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EE1B132650FDA70009D3FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8EE1B142650FDA70009D3FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +37,12 @@
 		C8EE1B222650FDA90009D3FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8EE1B242650FDA90009D3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8EE1B252650FDA90009D3FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8EE1B2E2650FDFB0009D3FB /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		C8EE1B2F2650FDFB0009D3FB /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		C8EE1B332650FE0D0009D3FB /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		C8EE1B342650FE0D0009D3FB /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		C8EE1B382650FE180009D3FB /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		C8EE1B3B2650FE1F0009D3FB /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +50,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9059DAFD07EA5B50CBC4478 /* Pods_EventPassByResponder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35821292997A7CDF16ED40D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45FBC2F75C1C219E3F7470F4 /* Pods-EventPassByResponder.debug.xcconfig */,
+				15290A6DA25A9C46321DA594 /* Pods-EventPassByResponder.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C8EE1B072650FDA70009D3FB = {
 			isa = PBXGroup;
 			children = (
 				C8EE1B122650FDA70009D3FB /* EventPassByResponder */,
 				C8EE1B112650FDA70009D3FB /* Products */,
+				35821292997A7CDF16ED40D9 /* Pods */,
+				C9859C8482EF95F5297E5B86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +88,8 @@
 		C8EE1B122650FDA70009D3FB /* EventPassByResponder */ = {
 			isa = PBXGroup;
 			children = (
+				C8EE1B322650FDFF0009D3FB /* HeaderView */,
+				C8EE1B2D2650FDE30009D3FB /* HomeView */,
 				C8EE1B132650FDA70009D3FB /* AppDelegate.h */,
 				C8EE1B142650FDA70009D3FB /* AppDelegate.m */,
 				C8EE1B162650FDA70009D3FB /* SceneDelegate.h */,
@@ -76,6 +105,34 @@
 			path = EventPassByResponder;
 			sourceTree = "<group>";
 		};
+		C8EE1B2D2650FDE30009D3FB /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				C8EE1B2E2650FDFB0009D3FB /* HomeView.h */,
+				C8EE1B2F2650FDFB0009D3FB /* HomeView.m */,
+				C8EE1B382650FE180009D3FB /* HomeView.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		C8EE1B322650FDFF0009D3FB /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C8EE1B332650FE0D0009D3FB /* HeaderView.h */,
+				C8EE1B342650FE0D0009D3FB /* HeaderView.m */,
+				C8EE1B3B2650FE1F0009D3FB /* HeaderView.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		C9859C8482EF95F5297E5B86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				843C30792BF4E5D4B4A3F1EC /* Pods_EventPassByResponder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8EE1B292650FDA90009D3FB /* Build configuration list for PBXNativeTarget "EventPassByResponder" */;
 			buildPhases = (
+				8D48D5531C97B166595A0754 /* [CP] Check Pods Manifest.lock */,
 				C8EE1B0C2650FDA70009D3FB /* Sources */,
 				C8EE1B0D2650FDA70009D3FB /* Frameworks */,
 				C8EE1B0E2650FDA70009D3FB /* Resources */,
+				ADC1D12E312ABC6750BF69E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8EE1B232650FDA90009D3FB /* LaunchScreen.storyboard in Resources */,
+				C8EE1B3C2650FE1F0009D3FB /* HeaderView.xib in Resources */,
+				C8EE1B392650FE180009D3FB /* HomeView.xib in Resources */,
 				C8EE1B202650FDA90009D3FB /* Assets.xcassets in Resources */,
 				C8EE1B1E2650FDA70009D3FB /* Main.storyboard in Resources */,
 			);
@@ -140,13 +201,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D48D5531C97B166595A0754 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventPassByResponder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC1D12E312ABC6750BF69E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventPassByResponder/Pods-EventPassByResponder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventPassByResponder/Pods-EventPassByResponder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventPassByResponder/Pods-EventPassByResponder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8EE1B0C2650FDA70009D3FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C8EE1B1B2650FDA70009D3FB /* ViewController.m in Sources */,
+				C8EE1B352650FE0D0009D3FB /* HeaderView.m in Sources */,
 				C8EE1B152650FDA70009D3FB /* AppDelegate.m in Sources */,
+				C8EE1B302650FDFB0009D3FB /* HomeView.m in Sources */,
 				C8EE1B262650FDA90009D3FB /* main.m in Sources */,
 				C8EE1B182650FDA70009D3FB /* SceneDelegate.m in Sources */,
 			);
@@ -288,37 +393,41 @@
 		};
 		C8EE1B2A2650FDA90009D3FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FBC2F75C1C219E3F7470F4 /* Pods-EventPassByResponder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YAL9X38J8;
 				INFOPLIST_FILE = EventPassByResponder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.EventPassByResponder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C8EE1B2B2650FDA90009D3FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15290A6DA25A9C46321DA594 /* Pods-EventPassByResponder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YAL9X38J8;
 				INFOPLIST_FILE = EventPassByResponder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.EventPassByResponder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
