@@ -46,6 +46,7 @@
 		C8EE1B3B2650FE1F0009D3FB /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		C8EE1B46265105550009D3FB /* UIResponder+NextResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+NextResponder.h"; sourceTree = "<group>"; };
 		C8EE1B47265105550009D3FB /* UIResponder+NextResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+NextResponder.m"; sourceTree = "<group>"; };
+		C8EE1B4C26510DC20009D3FB /* HomeViewEventProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewEventProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		C8EE1B122650FDA70009D3FB /* EventPassByResponder */ = {
 			isa = PBXGroup;
 			children = (
+				C8EE1B4B26510DA40009D3FB /* EventProtocol */,
 				C8EE1B452651052B0009D3FB /* Responder */,
 				C8EE1B322650FDFF0009D3FB /* HeaderView */,
 				C8EE1B2D2650FDE30009D3FB /* HomeView */,
@@ -135,6 +137,14 @@
 				C8EE1B47265105550009D3FB /* UIResponder+NextResponder.m */,
 			);
 			path = Responder;
+			sourceTree = "<group>";
+		};
+		C8EE1B4B26510DA40009D3FB /* EventProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				C8EE1B4C26510DC20009D3FB /* HomeViewEventProtocol.h */,
+			);
+			path = EventProtocol;
 			sourceTree = "<group>";
 		};
 		C9859C8482EF95F5297E5B86 /* Frameworks */ = {

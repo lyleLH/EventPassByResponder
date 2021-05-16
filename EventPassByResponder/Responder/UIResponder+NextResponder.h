@@ -10,6 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIResponder (NextResponder)
+
+@property(nonatomic,weak) id nr_eventDelegate;
+
 -(void)passEventName:(NSString *)eventName fromObject:(id )obj withUserInfo:(NSDictionary *)userInfo ;
 
 @end

@@ -6,7 +6,6 @@
 //
 
 #import "HeaderView.h"
-#import "UIResponder+NextResponder.h"
 
 
 @interface HeaderView ()

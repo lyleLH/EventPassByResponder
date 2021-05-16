@@ -8,7 +8,6 @@
 #import "HomeView.h"
 #import "HeaderView.h"
 #import <Masonry/Masonry.h>
-#import "UIResponder+NextResponder.h"
 @interface HomeView ()
 @property (weak, nonatomic) IBOutlet UIView *searheaderView;
 
@@ -37,6 +36,10 @@
     [self passEventName:@"menuButtonClicked" fromObject:sender withUserInfo:@{}];
 }
 
+
+- (void)passEventName:(NSString *)eventName fromObject:(id)obj withUserInfo:(NSDictionary *)userInfo {
+    
+}
 
 
  
