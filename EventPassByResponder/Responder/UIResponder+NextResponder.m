@@ -18,7 +18,7 @@ static void *kNextResponderKey = "com.tom.NextResponderKey";
 
 
 - (void)setNr_eventDelegate:(id)nr_eventDelegate {
-    objc_setAssociatedObject(self, kNextResponderKey, nr_eventDelegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, kNextResponderKey, nr_eventDelegate, OBJC_ASSOCIATION_ASSIGN);
 }
 
 
