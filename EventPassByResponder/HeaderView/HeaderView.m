@@ -17,4 +17,16 @@
 }
 */
 
+
+- (IBAction)textfieldEditingDidEnd:(UITextField *)sender {
+    
+}
+
+- (IBAction)confirmButtonClicked:(UIButton*)sender {
+    
+    
+}
+
+
+
 @end
