@@ -24,17 +24,17 @@
 }
 
 
--(void)routerEventName:(NSString *)eventName userInfo:(NSDictionary *)userInfo{
+-(void)passEventName:(NSString *)eventName fromObject:(id )obj withUserInfo:(NSDictionary *)userInfo {
     ///此处可以接收到子控件传过来的事件
     ///从子控件向父控件传递的消息
     ///可以根据eventName来进行不同的响应
     if ([eventName isEqualToString:@"textfieldEditingDidEnd"]) {
-        UITextField * txf = userInfo[@"textField"];
+        UITextField * txf = obj;
         NSLog(@"%@",txf.text);
     }else if ([eventName isEqualToString:@"confirmButtonClicked"]){
         NSLog(@"confirm");
     }else if ([eventName isEqualToString:@"menuButtonClicked"]){
-        UIButton * btn = userInfo[@"button"];
+        UIButton * btn = obj;
         NSLog(@"menuButtonClicked,%ld",btn.tag -1000);
     }
 }

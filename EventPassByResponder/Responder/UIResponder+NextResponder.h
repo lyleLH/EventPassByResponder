@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIResponder (NextResponder)
--(void)routerEventName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
+-(void)passEventName:(NSString *)eventName fromObject:(id )obj withUserInfo:(NSDictionary *)userInfo ;
 
 @end
 

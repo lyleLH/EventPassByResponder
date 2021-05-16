@@ -9,8 +9,8 @@
 
 @implementation UIResponder (NextResponder)
 
--(void)routerEventName:(NSString *)eventName userInfo:(NSDictionary *)userInfo{
-    [[self nextResponder] routerEventName:eventName userInfo:userInfo];
+-(void)passEventName:(NSString *)eventName fromObject:(id )obj withUserInfo:(NSDictionary *)userInfo {
+    [[self nextResponder] passEventName:eventName fromObject:obj withUserInfo:userInfo];
 }
 
 @end

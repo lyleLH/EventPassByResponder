@@ -34,7 +34,7 @@
 
 
 - (IBAction)menuButtonClicked:(UIButton*)sender {
-    [self routerEventName:@"menuButtonClicked" userInfo:@{@"button":sender}];
+    [self passEventName:@"menuButtonClicked" fromObject:sender withUserInfo:@{}];
 }
 
 

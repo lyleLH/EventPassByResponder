@@ -26,13 +26,13 @@
 
 
 - (void)textfieldEditingChange:(UITextField *)sender {
-    
-    [self routerEventName:@"textfieldEditingDidEnd" userInfo:@{@"textField":sender}];
+    [self passEventName:@"textfieldEditingDidEnd" fromObject:sender withUserInfo:@{}];
+     
 }
 
 - (IBAction)confirmButtonClicked:(UIButton*)sender {
-    
-    [self routerEventName:@"confirmButtonClicked" userInfo:@{@"button":sender}];
+    [self passEventName:@"confirmButtonClicked" fromObject:sender withUserInfo:@{}];
+
 }
  
 - (void)setTextField:(UITextField *)textField {
